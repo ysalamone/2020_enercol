@@ -1,0 +1,42 @@
+@import "menu";
+
+$jaune: rgb(252,183,49);
+$vert: rgb(179,209,67);
+$marronClair: rgb(232,221,202);
+$gris: rgb(109,111,113);
+
+.bloc {
+  border: 1px solid grey;
+}
+
+.bloc--jaune {
+  background-color: $jaune;
+}
+
+.bloc--vert {
+  background-color: $vert;
+}
+
+.bloc--plus {
+  background-image: url("../img/dot-grid.png");
+}
+
+.bloc--marronClair {
+  background-color: $marronClair;
+}
+
+.bloc--gris {
+  background-color: $gris;
+}
+
+.content {
+  border: 1px solid grey;
+  height: 100px;
+  margin: 5px auto;
+}
+
+@media screen and (min-width: 960px) {
+  .content {
+    width: 960px;
+  }
+}
