@@ -156,8 +156,13 @@ input[type='checkbox']:checked ~ ul.menu {
   }
 }
 
+.body {
+  font-family: "Lato Regular";
+}
+
 .bloc {
   border: 1px solid grey;
+  padding: 20px 10px;
 }
 
 .bloc--jaune {
@@ -170,6 +175,7 @@ input[type='checkbox']:checked ~ ul.menu {
 
 .bloc--points {
   background-image: url("../svg/points.svg");
+  background-blend-mode: soft-light;
 }
 
 .bloc--marronClair {
@@ -249,6 +255,63 @@ input[type='checkbox']:checked ~ ul.menu {
   color: #00afec;
 }
 
+.titre_et_texte {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  color: #6d6f71;
+  margin-top: 60px;
+  padding: 10px;
+}
+
+.titre_et_texte .titre {
+  font-family: "Lato Black";
+  font-size: 1.8em;
+  margin: 20px;
+  text-align: center;
+  background-color: #fff0;
+  line-height: 1.5;
+}
+
+.titre_et_texte .texte {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+.titre_et_texte .plus {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 32px;
+  -webkit-filter: brightness(0.3);
+          filter: brightness(0.3);
+}
+
+.boutonPlus {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  background-color: #6d6f71;
+  color: white;
+  font-size: 1.5em;
+  font-family: "Lato Black";
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.boutonPlus .plus {
+  width: 32px;
+}
+
 @media screen and (min-width: 960px) {
   .content {
     width: 960px;
@@ -259,6 +322,34 @@ input[type='checkbox']:checked ~ ul.menu {
   .grille_pictos {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+  }
+  .titre_et_texte {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .titre_et_texte .titre {
+    width: 50%;
+    text-align: right;
+  }
+  .titre_et_texte .texte {
+    width: 50%;
+  }
+  .boutonPlus {
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: center;
+        justify-content: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  .boutonPlus img {
+    margin-left: 10px;
   }
 }
 
