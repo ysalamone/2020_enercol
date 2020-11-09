@@ -3,22 +3,25 @@
 /* **************************** */
 /* variables */
 /* placeholders */
-.barreMenu, .menu {
+.barreMenu {
   background-color: #FFFD;
 }
 
 .hamb, .checkMenu {
-  width: 60px;
-  height: 60px;
-  position: fixed;
-  top: 14px;
-  right: 28px;
+  width: 36px;
+  height: 36px;
+  padding: 4px;
+  position: absolute;
+  top: 6px;
+  right: 12px;
+  background-color: #b3d143;
 }
 
 /* CSS */
 .barreMenu {
   display: -ms-flexbox;
   display: flex;
+  color: #6d6f71;
 }
 
 .titre {
@@ -26,15 +29,20 @@
   display: flex;
   -ms-flex-align: center;
       align-items: center;
-  height: 88px;
+  height: 48px;
+  margin: 0 0 0 16px;
 }
 
-.titre h1 {
-  margin: 0 0 0 28px;
+.titre img {
+  height: 40px;
+}
+
+.titre span {
+  font-size: 1.6em;
 }
 
 .barrnav {
-  color: #000;
+  color: #333;
 }
 
 .barrnav a {
@@ -52,17 +60,23 @@
       flex-direction: column;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  position: fixed;
-  top: 88px;
+  position: absolute;
+  top: 48px;
   right: 0;
   margin: 0;
   padding: 0;
 }
 
 .menu li {
-  margin: 10px 24px;
+  padding: 10px 24px;
   min-width: 116px;
+  font-family: "Anton Regular";
   text-align: right;
+  background-color: #b3d143;
+}
+
+.menu li.jaune {
+  background-color: #fcb731;
 }
 
 input[type='checkbox']:checked ~ ul.menu {
@@ -71,33 +85,67 @@ input[type='checkbox']:checked ~ ul.menu {
 }
 
 /* media query responsive */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 960px) {
   .hamb, .checkMenu {
     display: none;
+  }
+  .barreMenu {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    -ms-flex-pack: center;
+        justify-content: center;
+    background: none;
   }
   .menu {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
         flex-direction: row;
-    -ms-flex-positive: 1;
-        flex-grow: 1;
+    position: relative;
     width: initial;
     top: initial;
+    margin-left: 15px;
+    background: none;
   }
   .menu li {
     text-align: center;
     min-width: initial;
+    margin: 0;
+    padding: 0;
+    background-color: #b3d143;
   }
-  .barrnav {
-    display: -ms-flexbox;
+  .menu li.jaune {
+    margin-left: 10px;
+  }
+  .menu a {
+    display: inline-block;
+    padding: 12px 24px;
+  }
+  /*.barrnav {
     display: flex;
-    -ms-flex-align: center;
-        align-items: center;
+    align-items: center;
     margin: 0 auto;
   }
+
   .titre, .menu, .barrnav {
     background: initial;
+  }*/
+  .titre {
+    height: initial;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    background-color: white;
+    padding: 8px;
+    line-height: 0.8;
+  }
+  .titre img {
+    -ms-flex-order: -1;
+        order: -1;
   }
 }
 
@@ -129,7 +177,7 @@ input[type='checkbox']:checked ~ ul.menu {
 }
 
 .bloc--plus {
-  background-image: url("../img/dot-grid.png");
+  background-image: url("../svg/points.svg");
 }
 
 .bloc--marronClair {

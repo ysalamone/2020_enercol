@@ -1,9 +1,5 @@
+@import "variables";
 @import "menu";
-
-$jaune: rgb(252,183,49);
-$vert: rgb(179,209,67);
-$marronClair: rgb(232,221,202);
-$gris: rgb(109,111,113);
 
 @font-face {
   font-family: "Anton Regular";
@@ -33,7 +29,7 @@ $gris: rgb(109,111,113);
 }
 
 .bloc--plus {
-  background-image: url("../img/dot-grid.png");
+  background-image: url("../svg/points.svg");
 }
 
 .bloc--marronClair {
