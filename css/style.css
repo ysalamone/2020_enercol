@@ -360,7 +360,7 @@ input[type='checkbox']:checked ~ ul.menu {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    margin: 0 auto;
+    margin: 10px auto;
   }
   .boutonPlus img {
     margin-left: 10px;
