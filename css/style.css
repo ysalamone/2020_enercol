@@ -45,7 +45,7 @@
   -ms-flex-align: center;
       align-items: center;
   height: 48px;
-  margin: 0 0 0 16px;
+  margin-left: 16px;
 }
 
 .titre img {
@@ -141,20 +141,12 @@ input[type='checkbox']:checked ~ ul.menu {
     display: inline-block;
     padding: 12px 24px;
   }
-  /*.barrnav {
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-  }
-
-  .titre, .menu, .barrnav {
-    background: initial;
-  }*/
   .titre {
     height: initial;
     -ms-flex-direction: column;
         flex-direction: column;
     background-color: white;
+    margin: 0;
     padding: 8px;
     line-height: 0.8;
   }

@@ -36,7 +36,7 @@ $breakpointMenu: 960px;
   display: flex;
   align-items: center;
   height: $hauteurBarre;
-  margin: 0 0 0 16px;
+  margin-left: 16px;
   img {
     height: 40px;
   }
@@ -128,20 +128,11 @@ input[type='checkbox']:checked ~ ul.menu {
     }
   }
 
-  /*.barrnav {
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-  }
-
-  .titre, .menu, .barrnav {
-    background: initial;
-  }*/
-
   .titre {
     height: initial;
     flex-direction: column;
     background-color: white;
+    margin: 0;
     padding: 8px;
     line-height: 0.8;
     img {
