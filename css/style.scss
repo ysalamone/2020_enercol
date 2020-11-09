@@ -5,6 +5,21 @@ $vert: rgb(179,209,67);
 $marronClair: rgb(232,221,202);
 $gris: rgb(109,111,113);
 
+@font-face {
+  font-family: "Anton Regular";
+  src: url("../fonts/Anton-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Lato Regular";
+  src: url("../fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Lato Black";
+  src: url("../fonts/Lato-Black.ttf");
+}
+
 .bloc {
   border: 1px solid grey;
 }

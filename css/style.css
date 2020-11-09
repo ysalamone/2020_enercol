@@ -101,6 +101,21 @@ input[type='checkbox']:checked ~ ul.menu {
   }
 }
 
+@font-face {
+  font-family: "Anton Regular";
+  src: url("../fonts/Anton-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Lato Regular";
+  src: url("../fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Lato Black";
+  src: url("../fonts/Lato-Black.ttf");
+}
+
 .bloc {
   border: 1px solid grey;
 }
