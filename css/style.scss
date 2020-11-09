@@ -19,7 +19,7 @@
 }
 
 .bloc--marronClair {
-  background-color: $marronClair;
+  background-color: $taupe;
 }
 
 .bloc--gris {
@@ -28,7 +28,7 @@
 
 .content {
   border: 1px solid grey;
-  height: 100px;
+  min-height: 100px;
   margin: 5px auto;
 }
 
@@ -40,6 +40,53 @@
   padding-bottom: 40px;
 }
 
+.bloc--blanc .accroche {
+  text-align: center;
+  font-family: "Anton Regular";
+  color: $jaune;
+  line-height: 0.9;
+  margin: 20px;
+  img {
+    margin-bottom: 30px;
+    width: 96px;
+  }
+}
+
+.grille_pictos {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Lato Regular";
+  font-size: 1.2em;
+  .picto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 50%;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .nb {
+    font-size: 1.8em;
+  }
+}
+
+.picto--coop {
+  color: $marron;
+}
+
+.picto--photovolt {
+  color: $vert;
+}
+
+.picto--prod {
+  color: $jaune;
+}
+
+.picto--capital {
+  color: $bleu;
+}
+
 @media screen and (min-width: 960px) {
   .content {
     width: 960px;
@@ -47,5 +94,9 @@
 
   .photoTop {
     height: 400px;
+  }
+
+  .grille_pictos {
+    flex-wrap: nowrap;
   }
 }
