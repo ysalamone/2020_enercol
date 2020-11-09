@@ -162,7 +162,6 @@ input[type='checkbox']:checked ~ ul.menu {
 
 .bloc {
   border: 1px solid grey;
-  padding: 20px 10px;
 }
 
 .bloc--jaune {
@@ -292,15 +291,11 @@ input[type='checkbox']:checked ~ ul.menu {
           filter: brightness(0.3);
 }
 
-.boutonPlus {
+.bouton {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
   -ms-flex-align: center;
       align-items: center;
-  background-color: #6d6f71;
-  color: white;
   font-size: 1.5em;
   font-family: "Lato Black";
   margin: 10px;
@@ -308,7 +303,26 @@ input[type='checkbox']:checked ~ ul.menu {
   border-radius: 10px;
 }
 
+.boutonPlus {
+  -ms-flex-direction: column;
+      flex-direction: column;
+  background-color: #6d6f71;
+  color: white;
+}
+
 .boutonPlus .plus {
+  width: 32px;
+}
+
+.boutonSouscrire {
+  background-color: #fcb731;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 10px auto;
+}
+
+.boutonSouscrire .souscrire {
   width: 32px;
 }
 
