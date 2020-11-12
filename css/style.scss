@@ -118,32 +118,30 @@
 }
 
 .bouton {
-  display: flex;
   align-items: center;
   text-align: center;
   font-size: 1.3em;
   font-family: "Lato Black";
-  margin: 10px;
+  margin: 10px auto;
   padding: 10px;
   border-radius: 10px;
-}
-
-.boutonPlus {
-  flex-direction: column;
-  background-color: $gris;
-  color: white;
-  .plus {
-    align-self: center;
-  }
-}
-
-.boutonSouscrire {
-  background-color: $jaune;
   width: fit-content;
-  margin: 10px auto;
-  .souscrire {
+  span {
+    vertical-align: middle;
+  }
+  svg {
+    vertical-align: middle;
     margin-left: 10px;
   }
+}
+
+.bouton--gris {
+  background-color: $gris;
+  color: white;
+}
+
+.bouton--jaune {
+  background-color: $jaune;
 }
 
 .bloc--jaune {
@@ -176,6 +174,9 @@
 .texteBloc {
   display: flex;
   flex-direction: column;
+  .plus {
+    align-self: flex-start;
+  }
 }
 
 
@@ -205,23 +206,17 @@
     }
   }
 
-  .boutonPlus {
+  .contenuBloc {
     flex-direction: row;
-    justify-content: center;
-    width: fit-content;
-    margin: 10px auto;
-    .plus {
-      margin-left: 10px;
+    img {
+      width: 45%;
     }
   }
 
-  .contenuBloc {
-    flex-direction: row;
-    .texteBloc {
-      margin-left: 24px;
-    }
-    img {
-      width: 45%;
+  .texteBloc {
+    margin-left: 24px;
+    .plus {
+      align-self: flex-end;
     }
   }
 
