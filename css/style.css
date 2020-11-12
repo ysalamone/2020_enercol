@@ -183,6 +183,7 @@ body {
 
 .bloc--marronClair {
   background-color: #e8ddca;
+  color: #6d6f71;
 }
 
 .bloc--gris {
@@ -239,8 +240,18 @@ body {
   text-align: center;
 }
 
+.grille_pictos .desc {
+  line-height: 1;
+}
+
 .grille_pictos .nb {
   font-size: 1.8em;
+}
+
+.grille_pictos svg {
+  fill: currentColor;
+  width: 72px;
+  height: 72px;
 }
 
 .picto--coop {

@@ -29,6 +29,7 @@ body {
 
 .bloc--marronClair {
   background-color: $taupe;
+  color: $gris;
 }
 
 .bloc--gris {
@@ -76,8 +77,16 @@ body {
     text-transform: uppercase;
     text-align: center;
   }
+  .desc {
+    line-height: 1;
+  }
   .nb {
     font-size: 1.8em;
+  }
+  svg {
+    fill: currentColor;
+    width: 72px;
+    height: 72px;
   }
 }
 

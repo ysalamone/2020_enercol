@@ -43,23 +43,23 @@
 
         <div class="grille_pictos">
             <div class="picto picto--coop">
-                <img src="svg/picto_coop.svg"/>
-                <span>Coopérateurs</span>
+                <svg><use xlink:href="./svg/sprite.svg#coop"></use></svg>
+                <span class="desc">Coopérateurs</span>
                 <span class="nb">190</span>
             </div>
             <div class="picto picto--photovolt">
-                <img src="svg/picto_photovoltaique.svg"/>
-                <span>Installations</span>
+                <svg><use xlink:href="./svg/sprite.svg#photovolt"></use></svg>
+                <span class="desc">Installations</span>
                 <span class="nb">8</span>
             </div>
             <div class="picto picto--prod">
-                <img src="svg/picto_production_energie.svg"/>
-                <span>Production annuelle</span>
+                <svg><use xlink:href="./svg/sprite.svg#prod"></use></svg>
+                <span class="desc">Production annuelle</span>
                 <span class="nb">141 MWh</span>
             </div>
             <div class="picto picto--capital">
-                <img src="svg/picto_capital.svg"/>
-                <span>Capital</span>
+                <svg><use xlink:href="./svg/sprite.svg#capital"></use></svg>
+                <span class="desc">Capital</span>
                 <span class="nb">112 950 €</span>
             </div>
         </div>
@@ -176,7 +176,25 @@
 </div>
 
 <div class="bloc bloc--marronClair">
-    <div class="content"></div>
+    <div class="content">
+        <div class="bloc__titre">
+            <h2>Témoignages</h2>
+            <div class="fleches">
+                <svg><use xlink:href="./svg/sprite.svg#fleche_droite"></use></svg>
+            </div>
+        </div>
+        <div class="bloc__contenu">
+            <img src="Photos/IMG_20170121_122143.jpg"/>
+            <div class="bloc__texte">
+                <h3>Mairie de Puy-Sanières</h3>
+                <p>Aenean velit arcu, pulvinar vel tellus ut, posuere fringilla ex. Nunc non felis ut lorem accumsan
+                    ultrices eget sit amet lorem. Quisque eu lorem nisi. Sed in metus lacus. Nunc at libero vel nisl
+                    auctor feugiat quis et erat. Mauris vitae semper nulla, ac aliquet diam. Cras mauris libero,
+                    hendrerit ut cursus vel, iaculis ac urna.</p>
+                <svg class="plus"><use xlink:href="./svg/sprite.svg#plus"></use></svg>
+            </div>
+        </div>
+    </div>
 </div>
 
 <footer class="bloc bloc--gris">
