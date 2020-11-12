@@ -12,4 +12,8 @@
     <symbol id="fleche_droite" viewBox="-31.005 -43.053 23.0953 28.8694">
         <path d="M-9.591-26.222s3.783-2.428 0-4.855l-17.631-11.322s-3.783-2.428-3.783 2.067v23.361s0 4.496 3.783 2.068z" clip-path="url(#SVGID_2_)"/>
     </symbol>
+    <symbol id="souscrire" viewBox="-0.574 -0.978 31 34">
+        <ellipse cx="14.948" cy="17.852" fill="#FFF" rx="14.948" ry="15.067"/>
+        <path fill="none" stroke="#6E7072" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="5" d="M6.427 13.112l7.472 13.603s6.022-21.669 11.47-24.496"/>
+    </symbol>
 </svg>

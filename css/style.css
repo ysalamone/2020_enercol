@@ -279,12 +279,12 @@ input[type='checkbox']:checked ~ ul.menu {
       flex-direction: column;
 }
 
-.plus {
+.plus, .souscrire {
   -ms-flex-item-align: end;
       align-self: flex-end;
   fill: currentColor;
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
 }
 
 .bouton {
@@ -292,7 +292,8 @@ input[type='checkbox']:checked ~ ul.menu {
   display: flex;
   -ms-flex-align: center;
       align-items: center;
-  font-size: 1.5em;
+  text-align: center;
+  font-size: 1.3em;
   font-family: "Lato Black";
   margin: 10px;
   padding: 10px;
@@ -320,7 +321,7 @@ input[type='checkbox']:checked ~ ul.menu {
 }
 
 .boutonSouscrire .souscrire {
-  width: 32px;
+  margin-left: 10px;
 }
 
 .bloc--jaune {
