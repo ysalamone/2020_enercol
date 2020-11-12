@@ -156,8 +156,9 @@ input[type='checkbox']:checked ~ ul.menu {
   }
 }
 
-.body {
+body {
   font-family: "Lato Regular";
+  line-height: 1.8;
 }
 
 .bloc {
@@ -177,6 +178,7 @@ input[type='checkbox']:checked ~ ul.menu {
 .bloc--points {
   background-image: url("../svg/points.svg");
   background-blend-mode: soft-light;
+  color: #6d6f71;
 }
 
 .bloc--marronClair {
@@ -257,7 +259,7 @@ input[type='checkbox']:checked ~ ul.menu {
   color: #00afec;
 }
 
-.titre_et_texte {
+.presentation {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -268,7 +270,7 @@ input[type='checkbox']:checked ~ ul.menu {
   margin-top: 60px;
 }
 
-.titre_et_texte .titre {
+.presentation .presentation__titre {
   font-family: "Lato Black";
   font-size: 1.8em;
   margin: 20px;
@@ -277,8 +279,9 @@ input[type='checkbox']:checked ~ ul.menu {
   line-height: 1.5;
 }
 
-.titre_et_texte .texte {
+.presentation .presentatioh__texte {
   width: 100%;
+  font-size: 1.1em;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -354,7 +357,10 @@ input[type='checkbox']:checked ~ ul.menu {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  line-height: 1.5;
+}
+
+.bloc__texte h3 {
+  font-size: 1.4em;
 }
 
 .bloc__texte .plus {
@@ -373,7 +379,7 @@ input[type='checkbox']:checked ~ ul.menu {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
-  .titre_et_texte {
+  .presentation {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
@@ -381,22 +387,29 @@ input[type='checkbox']:checked ~ ul.menu {
     -ms-flex-align: center;
         align-items: center;
   }
-  .titre_et_texte .titre {
+  .presentation .presentation__titre {
     width: 50%;
     text-align: right;
   }
-  .titre_et_texte .texte {
+  .presentation .presentation__texte {
     width: 50%;
   }
   .bloc__contenu {
     -ms-flex-direction: row;
         flex-direction: row;
+    -ms-flex-align: start;
+        align-items: flex-start;
   }
   .bloc__contenu img {
     width: 45%;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .bloc__texte {
     margin-left: 24px;
+  }
+  .bloc__texte h3 {
+    font-size: 1.6em;
   }
   .bloc__texte .plus {
     -ms-flex-item-align: end;
