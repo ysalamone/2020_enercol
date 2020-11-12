@@ -30,10 +30,18 @@ svg[class*="icon-"] {
   color: $gris;
 }
 
-.bloc--points {
+.bloc--points::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
   background-image: url("../svg/points.svg");
-  background-blend-mode: soft-light;
+}
+
+.bloc--points {
   color: $gris;
+  position: relative;
 }
 
 .bloc--marronClair {
@@ -202,8 +210,8 @@ svg[class*="icon-"] {
     height: 400px;
   }
 
-  .grille_pictos {
-    flex-wrap: nowrap;
+  .grille_pictos .picto {
+    width: 25%;
   }
 
   .presentation {
