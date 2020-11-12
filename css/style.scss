@@ -16,9 +16,9 @@ svg[class*="icon-"] {
   overflow: hidden;
 }
 
-.bloc {
+/*.bloc {
   border: 1px solid grey;
-}
+}*/
 
 .bloc--jaune {
   background-color: $jaune;
@@ -55,8 +55,8 @@ svg[class*="icon-"] {
 }
 
 .content {
-  border: 1px solid grey;
-  min-height: 100px;
+  /*border: 1px solid grey;
+  min-height: 100px;*/
   margin: 5px auto;
   padding: 10px;
 }
