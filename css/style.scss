@@ -110,7 +110,7 @@
   }
 }
 
-.plus, .souscrire {
+.plus, .souscrire, .fleches svg {
   align-self: flex-end;
   fill: currentColor;
   width: 36px;
@@ -149,21 +149,16 @@
   color: white;
 }
 
-.titreBloc {
+.bloc__titre {
   display: flex;
   justify-content: space-between;
   h2 {
     font-family: "Anton Regular";
     text-transform: uppercase;
   }
-  .fleches svg {
-      fill: currentColor;
-      width: 36px;
-      height: 36px;
-  }
 }
 
-.contenuBloc {
+.bloc__contenu {
   display: flex;
   flex-direction: column;
   img {
@@ -171,7 +166,7 @@
   }
 }
 
-.texteBloc {
+.bloc__texte {
   display: flex;
   flex-direction: column;
   .plus {

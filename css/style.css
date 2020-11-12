@@ -279,7 +279,7 @@ input[type='checkbox']:checked ~ ul.menu {
       flex-direction: column;
 }
 
-.plus, .souscrire {
+.plus, .souscrire, .fleches svg {
   -ms-flex-item-align: end;
       align-self: flex-end;
   fill: currentColor;
@@ -324,43 +324,37 @@ input[type='checkbox']:checked ~ ul.menu {
   color: white;
 }
 
-.titreBloc {
+.bloc__titre {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
 }
 
-.titreBloc h2 {
+.bloc__titre h2 {
   font-family: "Anton Regular";
   text-transform: uppercase;
 }
 
-.titreBloc .fleches svg {
-  fill: currentColor;
-  width: 36px;
-  height: 36px;
-}
-
-.contenuBloc {
+.bloc__contenu {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
 }
 
-.contenuBloc img {
+.bloc__contenu img {
   width: 90%;
 }
 
-.texteBloc {
+.bloc__texte {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
 }
 
-.texteBloc .plus {
+.bloc__texte .plus {
   -ms-flex-item-align: start;
       align-self: flex-start;
 }
