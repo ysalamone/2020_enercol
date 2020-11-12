@@ -203,7 +203,7 @@ svg[class*="icon-"] {
 
 .bloc--jaune {
   background-color: #fcb731;
-  color: white;
+  color: #fff;
 }
 
 .bloc--vert {
@@ -232,6 +232,7 @@ svg[class*="icon-"] {
 
 .bloc--gris {
   background-color: #6d6f71;
+  color: #fff;
 }
 
 .content {
@@ -367,7 +368,7 @@ svg[class*="icon-"] {
 
 .bouton--gris {
   background-color: #6d6f71;
-  color: white;
+  color: #fff;
 }
 
 .bouton--jaune {
@@ -412,6 +413,14 @@ svg[class*="icon-"] {
 .bloc__texte .icon-plus {
   -ms-flex-item-align: start;
       align-self: flex-start;
+}
+
+.footer__liens {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  text-align: center;
 }
 
 @media screen and (min-width: 960px) {
@@ -459,6 +468,12 @@ svg[class*="icon-"] {
   .bloc__texte .icon-plus {
     -ms-flex-item-align: end;
         align-self: flex-end;
+  }
+  .footer__liens {
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: space-evenly;
+        justify-content: space-evenly;
   }
 }
 

@@ -22,7 +22,7 @@ svg[class*="icon-"] {
 
 .bloc--jaune {
   background-color: $jaune;
-  color: white;
+  color: #fff;
 }
 
 .bloc--vert {
@@ -51,6 +51,7 @@ svg[class*="icon-"] {
 
 .bloc--gris {
   background-color: $gris;
+  color: #fff;
 }
 
 .content {
@@ -164,7 +165,7 @@ svg[class*="icon-"] {
 
 .bouton--gris {
   background-color: $gris;
-  color: white;
+  color: #fff;
 }
 
 .bouton--jaune {
@@ -200,6 +201,11 @@ svg[class*="icon-"] {
   }
 }
 
+.footer__liens {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
 
 @media screen and (min-width: 960px) {
   .content {
@@ -244,6 +250,11 @@ svg[class*="icon-"] {
     .icon-plus {
       align-self: flex-end;
     }
+  }
+
+  .footer__liens {
+    flex-direction: row;
+    justify-content: space-evenly;
   }
 
 }
