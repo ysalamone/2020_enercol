@@ -164,10 +164,6 @@ input[type='checkbox']:checked ~ ul.menu {
   border: 1px solid grey;
 }
 
-.bloc--jaune {
-  background-color: #fcb731;
-}
-
 .bloc--vert {
   background-color: #b3d143;
 }
@@ -189,6 +185,7 @@ input[type='checkbox']:checked ~ ul.menu {
   border: 1px solid grey;
   min-height: 100px;
   margin: 5px auto;
+  padding: 10px;
 }
 
 .photoTop {
@@ -263,7 +260,6 @@ input[type='checkbox']:checked ~ ul.menu {
       align-items: center;
   color: #6d6f71;
   margin-top: 60px;
-  padding: 10px;
 }
 
 .titre_et_texte .titre {
@@ -283,12 +279,12 @@ input[type='checkbox']:checked ~ ul.menu {
       flex-direction: column;
 }
 
-.titre_et_texte .plus {
+.plus {
   -ms-flex-item-align: end;
       align-self: flex-end;
+  fill: currentColor;
   width: 32px;
-  -webkit-filter: brightness(0.3);
-          filter: brightness(0.3);
+  height: 32px;
 }
 
 .bouton {
@@ -311,7 +307,8 @@ input[type='checkbox']:checked ~ ul.menu {
 }
 
 .boutonPlus .plus {
-  width: 32px;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .boutonSouscrire {
@@ -324,6 +321,47 @@ input[type='checkbox']:checked ~ ul.menu {
 
 .boutonSouscrire .souscrire {
   width: 32px;
+}
+
+.bloc--jaune {
+  background-color: #fcb731;
+  color: white;
+}
+
+.titreBloc {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.titreBloc h2 {
+  font-family: "Anton Regular";
+  text-transform: uppercase;
+}
+
+.titreBloc .fleches svg {
+  fill: currentColor;
+  width: 36px;
+  height: 36px;
+}
+
+.contenuBloc {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+.contenuBloc img {
+  width: 90%;
+}
+
+.texteBloc {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
 }
 
 @media screen and (min-width: 960px) {
@@ -362,8 +400,18 @@ input[type='checkbox']:checked ~ ul.menu {
     width: fit-content;
     margin: 10px auto;
   }
-  .boutonPlus img {
+  .boutonPlus .plus {
     margin-left: 10px;
+  }
+  .contenuBloc {
+    -ms-flex-direction: row;
+        flex-direction: row;
+  }
+  .contenuBloc .texteBloc {
+    margin-left: 24px;
+  }
+  .contenuBloc img {
+    width: 45%;
   }
 }
 
