@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Anton Regular";
   src: url("../fonts/Anton-Regular.ttf");
@@ -161,6 +162,15 @@ body {
   line-height: 1.8;
 }
 
+svg[class*="icon-"] {
+  width: 36px;
+  height: 36px;
+  vertical-align: -0.5em;
+  fill: currentColor;
+  /* Les paths et les strokes qui dépassent de la viewBox peuvent apparaître dans IE. */
+  overflow: hidden;
+}
+
 .bloc {
   border: 1px solid grey;
 }
@@ -249,7 +259,6 @@ body {
 }
 
 .grille_pictos svg {
-  fill: currentColor;
   width: 72px;
   height: 72px;
 }
@@ -299,12 +308,9 @@ body {
       flex-direction: column;
 }
 
-.plus, .souscrire, .fleches svg {
+.icon-plus {
   -ms-flex-item-align: end;
       align-self: flex-end;
-  fill: currentColor;
-  width: 36px;
-  height: 36px;
 }
 
 .bouton {
@@ -321,12 +327,7 @@ body {
   width: fit-content;
 }
 
-.bouton span {
-  vertical-align: middle;
-}
-
 .bouton svg {
-  vertical-align: middle;
   margin-left: 10px;
 }
 
@@ -374,7 +375,7 @@ body {
   font-size: 1.4em;
 }
 
-.bloc__texte .plus {
+.bloc__texte .icon-plus {
   -ms-flex-item-align: start;
       align-self: flex-start;
 }
@@ -422,7 +423,7 @@ body {
   .bloc__texte h3 {
     font-size: 1.6em;
   }
-  .bloc__texte .plus {
+  .bloc__texte .icon-plus {
     -ms-flex-item-align: end;
         align-self: flex-end;
   }

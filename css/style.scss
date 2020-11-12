@@ -7,6 +7,15 @@ body {
   line-height: 1.8;
 }
 
+svg[class*="icon-"] {
+  width: 36px;
+  height: 36px;
+  vertical-align: -0.5em;
+  fill: currentColor;
+  /* Les paths et les strokes qui dépassent de la viewBox peuvent apparaître dans IE. */
+  overflow: hidden;
+}
+
 .bloc {
   border: 1px solid grey;
 }
@@ -84,7 +93,6 @@ body {
     font-size: 1.8em;
   }
   svg {
-    fill: currentColor;
     width: 72px;
     height: 72px;
   }
@@ -128,11 +136,8 @@ body {
   }
 }
 
-.plus, .souscrire, .fleches svg {
+.icon-plus {
   align-self: flex-end;
-  fill: currentColor;
-  width: 36px;
-  height: 36px;
 }
 
 .bouton {
@@ -144,11 +149,7 @@ body {
   padding: 10px;
   border-radius: 10px;
   width: fit-content;
-  span {
-    vertical-align: middle;
-  }
   svg {
-    vertical-align: middle;
     margin-left: 10px;
   }
 }
@@ -186,7 +187,7 @@ body {
   h3 {
     font-size: 1.4em;
   }
-  .plus {
+  .icon-plus {
     align-self: flex-start;
   }
 }
@@ -232,7 +233,7 @@ body {
     h3 {
       font-size: 1.6em;
     }
-    .plus {
+    .icon-plus {
       align-self: flex-end;
     }
   }
