@@ -75,9 +75,10 @@ svg[class*="icon-"] {
   color: $jaune;
   line-height: 0.9;
   margin: 20px;
-  img {
+  .icon-logo {
     margin-bottom: 30px;
     width: 96px;
+    height: 96px;
   }
 }
 

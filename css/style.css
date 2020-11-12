@@ -258,9 +258,10 @@ svg[class*="icon-"] {
   margin: 20px;
 }
 
-.bloc--blanc .accroche img {
+.bloc--blanc .accroche .icon-logo {
   margin-bottom: 30px;
   width: 96px;
+  height: 96px;
 }
 
 .grille_pictos {
